@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <title>Change in median rent over time</title>
+        <style type="text/css">
+        .chart {
+            margin-left: 40px;
+            height: 506px;
+        }
+
+        h1, h2, p {
+            margin-left: 40px;
+            margin-right:40px;
+            font-family:Helvetica;
+        }
+            
+        text {
+            font: 10px sans-serif;
+        }
+
+        .axis path, .axis line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+
+        .label {
+            fill: #777;
+        }
+        
+        .charts {
+          display:inline-block;    
+          float:left;
+        }
+        
+        .hidden {
+          display:none;
+        }
+/*
+        #filter {
+          display:inline-block;    
+          float:left;
+        }
+*/
+
+        </style>
+    </head>
+    <body>
+        <h1>Change in Average Median Rent, 2011 - 2015</h1>
+        <div class="charts">
+          <p class="chart" id="chart1"></p>
+          <h1>Change in % of Art-Related Facebook Events, 2011 - 2015</h1>
+          <p class="chart" id="chart2"></p>
+          <h1>Change in Average Household Income, 2011 - 2015</h1>
+          <p class="chart" id="chart3"></p>
+        </div>
+        <div id="filter">
+          <g style="display:block;">
+            <input type="checkbox" class="subborough-filter" checked value="all" id="all">
+            <text>All</text>
+          </g>
+          
+        </div>
+        <script type="text/javascript" src="neighborhoods.js"></script>
+    </body>
+</html>

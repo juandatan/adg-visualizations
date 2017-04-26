@@ -1,0 +1,3 @@
+var margin = {top: 19.5, right: 19.5, bottom: 19.5, left: 100};
+var width = 960 - margin.right;
+var height = 500 - margin.top - margin.bottom;
