@@ -40,7 +40,7 @@ svgRent.append("text")
     .attr("transform", "rotate(270 7 -5)")
     .text("average median rent");
 
-d3.csv("../data/median_rent/averageMedianRentChangeBySubborough.csv", function (subboroughs) {
+d3.csv("data/median_rent/averageMedianRentChangeBySubborough.csv", function (subboroughs) {
   svgRent.append("g")            
       .selectAll("path")
       .data(subboroughs)
@@ -115,7 +115,7 @@ svgEvents.append("text")
     .attr("transform", "rotate(270 7 -5)")
     .text("% Facebook events that are art-related");
 
-d3.csv("../data/fb_events/changeInFacebookEvents.csv", function (subboroughs) {
+d3.csv("data/fb_events/changeInFacebookEvents.csv", function (subboroughs) {
   svgEvents.append("g")            
       .selectAll("path")
       .data(subboroughs)
@@ -178,7 +178,7 @@ svgIncome.append("text")
     .attr("transform", "rotate(270 7 -5)")
     .text("average household income");
 
-d3.csv("../data/average_income/averageIncomeBySubborough.csv", function (subboroughs) {
+d3.csv("data/average_income/averageIncomeBySubborough.csv", function (subboroughs) {
   svgIncome.append("g")            
       .selectAll("path")
       .data(subboroughs)
